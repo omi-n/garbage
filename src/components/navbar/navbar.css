@@ -1,0 +1,31 @@
+:root {
+    font-family: "DejaVu-sans";
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 2px 2px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-img {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: rgb(211, 211, 211);
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-item {
+    font-size: 1.3rem;
+}
