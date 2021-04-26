@@ -1,5 +1,6 @@
 .content {
-    margin-left: 4rem;
+    margin-left: 3rem;
+    max-width: 40vw;
 }
 
 .main-header {
@@ -49,17 +50,10 @@
     color: rgb(112, 112, 112);
 }
 
-.monkey {
-    margin: auto;
-}
-
-.monkey img {
-    height: 70vh;
-}
-
 @media (max-width: 1000px) {
     .content {
         margin-left: 1rem;
+        max-width: 95vw;
     }
 
     .main-header {
@@ -73,8 +67,27 @@
     .main {
         flex-direction: column;
     }
+}
 
-    .monkey img {
-        max-width: 95vw;
+/* This is to make blobcatnod follow your cursor :) */
+
+.blobcatnod {
+    display: block;
+    position: absolute;
+    animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+
+@keyframes moveX {
+    from { left: 40%; } to { left: 90%; }
+}
+
+@keyframes moveY {
+    from { top: 10%; } to { top: 80%; }
+}
+
+@media (max-width: 1000px) {
+    .blobcatnod {
+        display: none;
     }
+    
 }
