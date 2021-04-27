@@ -78,7 +78,7 @@
 }
 
 @keyframes moveX {
-    from { left: 40%; } to { left: 90%; }
+    from { left: 43%; } to { left: 90%; }
 }
 
 @keyframes moveY {

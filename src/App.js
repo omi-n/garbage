@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/navbar/navbar.js";
 import MainPage from "./components/content/mainpage.js";
 import Projects from "./components/content/projects.js";
+import Resume from "./components/content/resume.js";
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/resume" component={Resume} />
         </Switch>
       </div>
     </Router>
