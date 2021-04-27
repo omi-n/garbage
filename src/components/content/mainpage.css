@@ -1,6 +1,6 @@
 .content {
     margin-left: 3rem;
-    max-width: 40vw;
+    max-width: 39vw;
 }
 
 .main-header {
@@ -12,6 +12,7 @@
 .main {
     display: flex;
     flex-direction: row;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 .hello {
@@ -69,7 +70,21 @@
     }
 }
 
+@media (max-height: 1000px) {
+    #cat {
+        display: none;
+    }
+}
+
 /* This is to make blobcatnod follow your cursor :) */
+.blobcat {
+    margin-top: 8vh;
+    width: 56vw;
+    height: 85vh;
+    border: 5px solid rgb(34, 34, 34);
+    border-radius: 5px;
+    background-color: rgb(25, 44, 92);
+}
 
 .blobcatnod {
     display: block;

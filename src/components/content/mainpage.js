@@ -30,7 +30,10 @@ export default function MainPage() {
                 I check all direct chat messages more often than the e-mail on the resume, so if you can
                 please just leave a message there! These messages are completely private and can only be viewed
                 by the sender and myself.
+                <br /><br />
             </p>
+
+            <h3 id="cat">Not much on this page, enjoy the cat!</h3>
 
         </div>
 
