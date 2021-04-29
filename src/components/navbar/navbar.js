@@ -1,6 +1,9 @@
 import "./navbar.css";
+import { Login, Logout, auth } from "../content/directchat.js";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function Nav() {
+    const [ user ] = useAuthState(auth);
 return (
 <>
     <nav className="navbar-container navbar-dark navbar navbar-expand-lg">
@@ -20,7 +23,12 @@ return (
                 <li className="nav-item"><a className="nav-link" href="/projects">Projects</a></li>
                 <li className="nav-item"><a className="nav-link" href="/resume">Resume</a></li>
                 <li className="nav-item"><a className="nav-link" href="/chat">Direct Chat</a></li>
+                <li className="nav-item-hide">{user ? <Logout /> : <Login />}</li>
             </ul>
+        </div>
+
+        <div className="space-this-out">
+                {user ? <Logout /> : <Login />}
         </div>
     </nav>
     <br />

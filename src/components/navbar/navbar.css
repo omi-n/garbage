@@ -25,3 +25,17 @@
 .nav-item {
     font-size: 1.3rem;
 }
+
+.nav-item-hide {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .space-this-out {
+        display: none;
+    }
+
+    .nav-item-hide {
+        display: contents;
+    }
+}
