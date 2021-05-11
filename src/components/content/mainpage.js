@@ -1,5 +1,6 @@
 import React from "react";
 import "./mainpage.css";
+import gif from "./blobcat.gif";
 
 export default function MainPage() {
 
@@ -38,7 +39,7 @@ export default function MainPage() {
         </div>
 
         <div className="blobcat">
-            <img className="blobcatnod" id="blobcat" src="https://cdn.discordapp.com/emojis/778880071950794783.gif?v=1" />
+            <img className="blobcatnod" id="blobcat" src={gif} />
         </div>
 
     </div>

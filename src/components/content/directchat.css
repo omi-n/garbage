@@ -1,7 +1,11 @@
-.chat {
+.chat-admin {
+    display: flex;
+    flex-direction: column;
     margin-top: 10vh;
+    margin-left: 6vh;
 }
 
 .login-please {
-    margin-top: 10vh;
+    margin-top: 7vh;
+    margin-left: 6vh;
 }

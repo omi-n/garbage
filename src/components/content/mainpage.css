@@ -82,9 +82,9 @@
     margin-left: 1rem;
     width: 55vw;
     height: 85vh;
-    border: 5px solid rgb(34, 34, 34);
+    border: 3px solid rgb(77, 77, 77);
     border-radius: 5px;
-    background-color: rgb(25, 44, 92);
+    background-color: rgb(235, 235, 235);
 }
 
 .blobcatnod {

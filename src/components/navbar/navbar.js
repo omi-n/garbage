@@ -1,14 +1,15 @@
 import "./navbar.css";
 import { Login, Logout, auth } from "../content/directchat.js";
 import { useAuthState } from "react-firebase-hooks/auth";
+import png from "./rock.png";
 
 export default function Nav() {
     const [ user ] = useAuthState(auth);
 return (
 <>
-    <nav className="navbar-container navbar-dark navbar navbar-expand-lg">
+    <nav className="navbar-container navbar navbar-expand-lg">
         <a className="navbar-brand" href="/">
-            <img src="https://cdn.discordapp.com/avatars/132227983233515520/6bd1fb2e126603570f4a3dcd7dc0d787.webp?size=128"></img>
+            <img src={png}></img>
         </a>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse"
