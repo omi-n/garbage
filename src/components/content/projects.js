@@ -1,7 +1,9 @@
 import "./projects.css";
+import React from "react";
 
 export default function Projects() {
-    return (<>
+    return (
+    <div>
         <h3>You can click on any of the titles to view the project.</h3>
         <div className="projects">
             <div className="project">
@@ -28,5 +30,6 @@ export default function Projects() {
                 <img className="project-img" src="https://cdn.discordapp.com/attachments/803041781801025566/836735280228335626/unknown.png" />
             </div>
         </div>
-    </>)
+    </div>
+    )
 }

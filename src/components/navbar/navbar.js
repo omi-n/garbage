@@ -2,11 +2,12 @@ import "./navbar.css";
 import { Login, Logout, auth } from "../content/directchat.js";
 import { useAuthState } from "react-firebase-hooks/auth";
 import png from "./rock.png";
+import React from "react";
 
 export default function Nav() {
     const [ user ] = useAuthState(auth);
 return (
-<>
+<div>
     <nav className="navbar-container navbar navbar-expand-lg">
         <a className="navbar-brand" href="/">
             <img src={png}></img>
@@ -33,6 +34,6 @@ return (
         </div>
     </nav>
     <br />
-</>
+</div>
 )
 }

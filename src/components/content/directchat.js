@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-
+import { useCollectionData } from "react-firebase-hooks/firestore";
 import firebase from "firebase/app";
 import Init from "./initialize.js";
 import "firebase/auth";
@@ -8,7 +8,7 @@ import "./directchat.css";
 const { admin } = require("./adminEmail.json");
 
 // hooks
-import { useCollectionData } from "react-firebase-hooks/firestore";
+
 
 Init();
 
@@ -69,7 +69,7 @@ function UserChat() {
         setChat("");
     }
 
-    return (<>
+    return (<div>
         <div className="chat-admin">
             { chats && chats.map(chat => <ChatMessageUser key={chat.id} message={chat} />) }
 
@@ -79,7 +79,7 @@ function UserChat() {
                 <button className="btn btn-success" type="submit" disabled={!chat}>Submit</button>
             </form>
         </div>
-    </>)
+    </div>)
 }
 
 function AdminChat() {
@@ -124,7 +124,7 @@ function AdminChat() {
         setMessage("");
     }
 
-    return (<>
+    return (<div>
         <div className="chat-admin">
             { chats && chats.map(chat => <ChatMessage key={chat.id} message={chat} />) }
 
@@ -143,7 +143,7 @@ function AdminChat() {
                 <button className="btn btn-success" type="submit" disabled={!message}>Submit</button>
             </form>
         </div>
-    </>)
+    </div>)
 }
 
 function ChatMessage(props) {
