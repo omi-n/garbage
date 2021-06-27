@@ -18,7 +18,7 @@ export default function MainPage() {
                 <li className="contact-me"><u>You can find me at:</u></li>
                 <li className="contact"><a href="https://www.linkedin.com/in/nabil-omi/" target="_blank"> LinkedIn</a>
                 </li>
-                <li className="contact"><a href="https://discord.gg/ftQp3sd4kw" target="_blank"> Discord</a></li>
+                <li className="contact"><a href="https://discord.gg/sMfcvhZjCp" target="_blank"> Discord</a></li>
                 <li className="contact"><a href="https://github.com/rquit" target="_blank"> GitHub</a></li>
                 {/* <li className="contact"><a href="/chat"> Direct Chat</a></li> */}
             </ul>

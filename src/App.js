@@ -3,7 +3,7 @@ import "./styles.css";
 // import "firebase/firestore";
 // import "firebase/auth";
 // import { useAuthState } from "react-firebase-hooks/auth";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Site Page
 import Nav from "./components/navbar/navbar.js";
@@ -17,7 +17,7 @@ export default function App() {
   // const [ user ] = useAuthState(auth);
 
   return (
-    <HashRouter basename="/">
+    <BrowserRouter>
       <div className="App">
         <Nav />
         <Switch>
@@ -27,6 +27,6 @@ export default function App() {
           {/* <Route exact path="/chat" component={user ? Chat : LoginPlease} /> */}
         </Switch>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
