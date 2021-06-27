@@ -1,21 +1,11 @@
 .ooga {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5rem;
 }
 
-.ooga iframe {
-    height: 88vh;
-    width: 100vw;
-}
-
-@media (max-width: 1000px) {
-    .ooga {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin-top: 8vh;
-    }
+.ooga img {
+    max-width: 65vw;
 }
