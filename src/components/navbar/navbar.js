@@ -20,10 +20,10 @@ return (
 
         <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
-                <li id="nav-item" className="nav-item"><a className="nav-link" href="/portfolio-site/">Home</a></li>
+                <li id="nav-item" className="nav-item"><a className="nav-link" href="/">Home</a></li>
                 <li id="nav-item" className="nav-item"><a className="nav-link" href="https://github.com/rquit" target="_blank">GitHub</a></li>
-                <li id="nav-item" className="nav-item"><a className="nav-link" href="/portfolio-site/projects">Projects</a></li>
-                <li id="nav-item" className="nav-item"><a className="nav-link" href="/portfolio-site/resume">Resume</a></li>
+                <li id="nav-item" className="nav-item"><a className="nav-link" href="/projects">Projects</a></li>
+                <li id="nav-item" className="nav-item"><a className="nav-link" href="/resume">Resume</a></li>
                 {/* <li className="nav-item"><a className="nav-link" href="/chat">Direct Chat</a></li> */}
                 {/* <li className="nav-item-hide">{user ? <Logout /> : <Login />}</li> */}
             </ul>
