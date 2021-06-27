@@ -9,3 +9,15 @@
 .ooga img {
     max-width: 65vw;
 }
+
+@media (max-width: 1000px) {
+    .ooga img {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .ooga img {
+        max-width: 95vw;
+    }
+}
