@@ -70,7 +70,7 @@ function UserChat() {
     }
 
     return (<div>
-        <div className="chat-admin">
+        <div className="chat-user">
             { chats && chats.map(chat => <ChatMessageUser key={chat.id} message={chat} />) }
 
             <form onSubmit={submitChat}>
@@ -128,7 +128,7 @@ function AdminChat() {
         <div className="chat-admin">
             { chats && chats.map(chat => <ChatMessage key={chat.id} message={chat} />) }
 
-            <form onSubmit={submitChat}>
+            <form className="chat-submit" onSubmit={submitChat}>
                 <input value={chat} onChange={(e) => setChat(e.target.value)} placeholder="Message!" />
 
                 <button className="btn btn-success" type="submit" disabled={!chat}>Submit</button>
