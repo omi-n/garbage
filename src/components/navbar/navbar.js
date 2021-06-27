@@ -8,7 +8,7 @@ export default function Nav() {
     const [ user ] = useAuthState(auth);
 return (
 <div>
-    <nav className="navbar-container navbar navbar-expand-lg">
+    <nav className="navbar-container navbar navbar-dark navbar-expand-lg">
         <a className="navbar-brand" href="/">
             <img src={png}></img>
         </a>
@@ -20,18 +20,18 @@ return (
 
         <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
-                <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="https://github.com/rquit" target="_blank">GitHub</a></li>
-                <li className="nav-item"><a className="nav-link" href="/projects">Projects</a></li>
-                <li className="nav-item"><a className="nav-link" href="/resume">Resume</a></li>
-                <li className="nav-item"><a className="nav-link" href="/chat">Direct Chat</a></li>
-                <li className="nav-item-hide">{user ? <Logout /> : <Login />}</li>
+                <li id="nav-item" className="nav-item"><a className="nav-link" href="/">Home</a></li>
+                <li id="nav-item" className="nav-item"><a className="nav-link" href="https://github.com/rquit" target="_blank">GitHub</a></li>
+                <li id="nav-item" className="nav-item"><a className="nav-link" href="/projects">Projects</a></li>
+                <li id="nav-item" className="nav-item"><a className="nav-link" href="/resume">Resume</a></li>
+                {/* <li className="nav-item"><a className="nav-link" href="/chat">Direct Chat</a></li> */}
+                {/* <li className="nav-item-hide">{user ? <Logout /> : <Login />}</li> */}
             </ul>
         </div>
 
-        <div className="space-this-out">
+        {/* <div className="space-this-out">
                 {user ? <Logout /> : <Login />}
-        </div>
+        </div> */}
     </nav>
     <br />
 </div>

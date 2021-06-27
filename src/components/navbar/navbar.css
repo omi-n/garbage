@@ -14,14 +14,6 @@
     padding: 0;
 }
 
-.nav-link {
-    color: rgb(221, 221, 221);
-}
-
-.nav-link:hover {
-    color: rgb(255, 255, 255);
-}
-
 .nav-item {
     font-size: 1.3rem;
 }
