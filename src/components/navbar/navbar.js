@@ -1,11 +1,11 @@
 import "./navbar.css";
-import { Login, Logout, auth } from "../content/directchat.js";
-import { useAuthState } from "react-firebase-hooks/auth";
+// import { Login, Logout, auth } from "../content/directchat.js";
+// import { useAuthState } from "react-firebase-hooks/auth";
 import png from "./rock.png";
 import React from "react";
 
 export default function Nav() {
-    const [ user ] = useAuthState(auth);
+    // const [ user ] = useAuthState(auth);
 return (
 <div>
     <nav className="navbar-container navbar navbar-dark navbar-expand-lg">

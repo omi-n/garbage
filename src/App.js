@@ -1,8 +1,8 @@
 import React from 'react';
 import "./styles.css";
-import "firebase/firestore";
-import "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
+// import "firebase/firestore";
+// import "firebase/auth";
+// import { useAuthState } from "react-firebase-hooks/auth";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Site Pages
@@ -10,11 +10,11 @@ import Nav from "./components/navbar/navbar.js";
 import MainPage from "./components/content/mainpage.js";
 import Projects from "./components/content/projects.js";
 import Resume from "./components/content/resume.js";
-import { Chat, LoginPlease, auth } from "./components/content/directchat.js";
+// import { Chat, LoginPlease, auth } from "./components/content/directchat.js";
 
 
 export default function App() {
-  const [ user ] = useAuthState(auth);
+  // const [ user ] = useAuthState(auth);
 
   return (
     <Router>
