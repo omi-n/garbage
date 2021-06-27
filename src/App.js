@@ -21,9 +21,9 @@ export default function App() {
       <div className="App">
         <Nav />
         <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/portfolio-site/" component={MainPage} />
+          <Route exact path="/portfolio-site/projects" component={Projects} />
+          <Route exact path="/portfolio-site/resume" component={Resume} />
           {/* <Route exact path="/chat" component={user ? Chat : LoginPlease} /> */}
         </Switch>
       </div>
