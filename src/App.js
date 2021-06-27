@@ -5,7 +5,7 @@ import "./styles.css";
 // import { useAuthState } from "react-firebase-hooks/auth";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Site Pages
+// Site Page
 import Nav from "./components/navbar/navbar.js";
 import MainPage from "./components/content/mainpage.js";
 import Projects from "./components/content/projects.js";
